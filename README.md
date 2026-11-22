@@ -1,79 +1,67 @@
-
 # Hospital Management System
 
 ## Project Overview
-A console-based Hospital Management System developed using Java. This application helps administrators and receptionists manage patients, doctors, appointments, and medical bills.
+
+A console-based Hospital Management System developed using Java. This application allows administrators and receptionists to manage patients, doctors, appointments, and medical bills.
 
 ## Features
 
 ### 1. Login System
-- Admin Login
-- Receptionist Login
-- Password Hashing using SHA-256
-- Maximum 3 Login Attempts
+- Admin and Receptionist login
+- Password hashing using PBKDF2WithHmacSHA256
+- Maximum 3 login attempts
+- Password change functionality
 
 ### 2. Patient Management
-- Register Patient
-- View Patients
-- Search Patient
-- Update Patient
-- Delete Patient
-- Discharge Patient
+- Register patients
+- View, search, update, and delete patients
+- Discharge patients
 
 ### 3. Doctor Management
-- Add Doctor
-- View Doctors
-- Search Doctor
-- Update Doctor
-- Delete Doctor
+- Add, view, update, and delete doctors
 
 ### 4. Appointment Management
-- Book Appointment
-- View Appointments
-- Validate Patient and Doctor IDs
-- Prevent Duplicate Appointments
-- Prevent Booking for Discharged Patients
+- Book and view appointments
+- Cancel appointments
+- Validate patient and doctor IDs
+- Prevent duplicate appointments
+- Prevent appointments for discharged patients
 
 ### 5. Medical Billing
-- Calculate Medical Bill
-- Add New Charges
-- Display Total Bill
-- Generate Final Bill During Discharge
+- Create medical bills
+- View bills
+- Mark bills as paid
+- Support decimal billing amounts
 
 ### 6. Data Storage
-- Save data in text files
-- Load data when the application starts
-- Preserve data after restarting the application
+- File-based data persistence
+- UTF-8 file handling
+- Data remains available after restarting the application
 
 ## Technologies Used
 - Java
 - Object-Oriented Programming (OOP)
 - ArrayList
-- File Handling
+- File Handling (Java NIO)
 - Exception Handling
 - Scanner
-- SHA-256 Hashing
+- PBKDF2WithHmacSHA256
+- SecureRandom
+- BigDecimal
+- LocalDate
 
 ## Data Files
+- users.txt
 - patients.txt
 - doctors.txt
 - appointments.txt
-
-## Login Credentials
-
-### Admin
-- Username: admin
-- Password: 12345
-
-### Receptionist
-- Username: receptionist
-- Password: 12345
+- bills.txt
 
 ## How to Run
 1. Open the project in Eclipse IDE.
-2. Open CompleteHospitalManagement.java.
+2. Open `HospitalManagement.java`.
 3. Run the Java application.
-4. Enter the login credentials.
+4. Log in using your configured account.
 5. Select options from the menu.
 
 ## Developer
