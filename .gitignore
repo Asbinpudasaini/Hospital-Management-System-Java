@@ -1,0 +1,11 @@
+HospitalManagementData/
+hospital_data/
+users.txt
+patients.txt
+doctors.txt
+appointments.txt
+bills.txt
+*.class
+.settings/
+.classpath
+.project
